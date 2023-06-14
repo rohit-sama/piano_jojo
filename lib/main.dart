@@ -71,7 +71,69 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       );
-    } else {
+    }
+    else if (isTrueSecond) {
+      return Scaffold(
+        backgroundColor: Colors.blue[800],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                backgroundColor: Colors.black45,
+                radius: 70.0,
+                backgroundImage: AssetImage('assets/jojo.jpg'),
+              ),
+              Container(
+                margin: EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    Text("HAHA!!, YOU NOOB !!" , style: TextStyle(color: Colors.white),),
+                    Text("NOW listen to this masterpiece"  ,style: TextStyle(color: Colors.white38),),
+                  ],
+                ),
+              ),
+
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.lime[700],
+                          padding: EdgeInsets.all(5)),
+                      onPressed: () {
+                        player.stop();
+                        player.play(AssetSource('jojo.mp3'));
+                        isTrueSecond = true;
+                        isTrue = false;
+                        setState(() {});
+                      },
+                      child: const Text("listen again >>"),
+                    ),
+                    SizedBox(width: 8),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.lime[700],
+                      ),
+                      onPressed: () {
+                        player.stop();
+                        isTrueSecond = false;
+                        isTrue = false;
+                        setState(() {});
+                      },
+                      child: const Text("go back <<"),
+                    ),
+                  ],
+                ),
+              )
+
+            ],
+          ),
+        ),
+      );
+    }
+    else {
       return Scaffold(
         appBar: AppBar(
           title: Center(child: Text(widget.title)),
