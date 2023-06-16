@@ -1,16 +1,18 @@
 # piano_jojo
+- this i a project i made for fun using flutter.
+- youtube demo :- https://youtu.be/rA5eZl7LhF0
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# screenshots
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center" width="100%">
+    <img width="33%" src="https://github.com/rohit-sama/piano_jojo/assets/112627630/e87e333b-7417-4035-9ecb-a8ada4a2d61f">
+    <img width="33%" src="https://github.com/rohit-sama/piano_jojo/assets/112627630/5b54b156-497b-4e8d-a069-d3b02369b771">
+    <img width="33%" src="https://github.com/rohit-sama/piano_jojo/assets/112627630/64b30c8d-0fa8-4f2e-bafd-538cd126728e">
+  
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
